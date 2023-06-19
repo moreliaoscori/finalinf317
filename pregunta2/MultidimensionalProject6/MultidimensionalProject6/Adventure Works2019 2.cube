@@ -1,0 +1,288 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="635a5c55-060b-47f7-9525-fef29d915312" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Adventure Works2019 2</ID>
+  <Name>Adventure Works2019 2</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="31bb5046-40aa-4b40-bb5f-6ef8c4464405">
+      <ID>Product</ID>
+      <Name>Product</Name>
+      <DimensionID>Product</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="721f6a9f-e770-4163-9e60-b129b0c5f168">
+          <AttributeID>Product ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="cd7acd4b-b213-41af-a9f7-ed8db87f48b6">
+          <AttributeID>Size Unit Measure Code</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="892a77d4-875f-4260-9003-df687a6e0266">
+          <AttributeID>Product Subcategory ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="43004a2c-3a06-437f-8044-2a235d28af83">
+          <AttributeID>Weight Unit Measure Code</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c9681c94-9e63-4245-a5b2-547c24cff1be">
+          <AttributeID>Product Model ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="f6941896-228a-46cb-9eb4-e65824503e9e">
+      <ID>Unit Measure</ID>
+      <Name>Unit Measure</Name>
+      <DimensionID>Unit Measure</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="08f4f426-a7de-4fbc-aca2-16119155b0b7">
+          <AttributeID>Unit Measure Code</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="7bf3d314-f9a4-4c7e-96d0-95ed365e5acd">
+      <ID>Vendor</ID>
+      <Name>Vendor</Name>
+      <DimensionID>Vendor</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="f5ecea0f-1f16-43b4-b01b-6d2d1bf49b3d">
+          <AttributeID>Business Entity ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="e6fb28b9-fa97-4c0e-b606-35f303eba5b5">
+      <ID>Product - Size Unit Measure</ID>
+      <Name>Product - Size Unit Measure</Name>
+      <DimensionID>Unit Measure</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="0f55ef0c-3035-4066-ae33-18a0c1482790">
+          <AttributeID>Unit Measure Code</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="b1cec22c-2e6a-4671-be39-7a9f7f0656ff">
+      <ID>Product - Weight Unit Measure</ID>
+      <Name>Product - Weight Unit Measure</Name>
+      <DimensionID>Unit Measure</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="5295f5bd-1129-4169-97e4-362c53eb9e6a">
+          <AttributeID>Unit Measure Code</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="8098e913-8d07-4fea-880a-6301c0c09e6e">
+      <ID>Product Vendor</ID>
+      <Name>Product Vendor</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="b7507eae-0f07-45f9-b6b0-b2058e943b3b">
+          <ID>Average Lead Time</ID>
+          <Name>Average Lead Time</Name>
+          <Source dwd:design-time-name="45db93c0-ca8a-4449-b681-2be97a6c174b">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="95102d6d-949a-4f4c-8e6a-8ec777def1bb">
+              <TableID>Purchasing_ProductVendor</TableID>
+              <ColumnID>AverageLeadTime</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="f0816b18-d853-4166-a0e6-a29b11c72503">
+          <ID>Standard Price</ID>
+          <Name>Standard Price</Name>
+          <Source dwd:design-time-name="a2ed7024-499a-4a1d-b18e-204de46117d6">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="67663cd4-415b-4e92-99c2-75b480cd32e2">
+              <TableID>Purchasing_ProductVendor</TableID>
+              <ColumnID>StandardPrice</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="2b78f123-7bb0-4c00-acf0-828545fc5c73">
+          <ID>Last Receipt Cost</ID>
+          <Name>Last Receipt Cost</Name>
+          <Source dwd:design-time-name="e2b9bf67-6540-4243-9295-9c7b76f9934f">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="d553d49c-ee9f-4433-9737-06b9550354c1">
+              <TableID>Purchasing_ProductVendor</TableID>
+              <ColumnID>LastReceiptCost</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="88912e35-10e1-47b3-9b4a-7828c452b94f">
+          <ID>Min Order Qty</ID>
+          <Name>Min Order Qty</Name>
+          <Source dwd:design-time-name="c8806b78-e386-423a-b625-2fd7bead602a">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="bebc1de2-8cf7-4e86-89a4-f689bfe93ea9">
+              <TableID>Purchasing_ProductVendor</TableID>
+              <ColumnID>MinOrderQty</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="1828a618-fad7-4458-859b-4fe14e118cfa">
+          <ID>Max Order Qty</ID>
+          <Name>Max Order Qty</Name>
+          <Source dwd:design-time-name="2394e7fa-75af-47d1-936a-9b064888067a">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="278597eb-ad29-46a9-9639-ba8adbb63e56">
+              <TableID>Purchasing_ProductVendor</TableID>
+              <ColumnID>MaxOrderQty</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="a1b0ad3a-5ffe-4aad-a61d-b3cb71759098">
+          <ID>On Order Qty</ID>
+          <Name>On Order Qty</Name>
+          <Source dwd:design-time-name="eb22dd3c-1679-4910-a54f-fd520d833b51">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="170bbf44-02b0-4d19-9922-5ac3a22810e0">
+              <TableID>Purchasing_ProductVendor</TableID>
+              <ColumnID>OnOrderQty</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="5639f282-fc01-4f76-be9c-03b0cf302d09">
+          <ID>Product Vendor Count</ID>
+          <Name>Product Vendor Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="f05c31c5-b5cb-4c72-a1af-0ae998b2dea2">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="c15fc835-f42c-4fdd-9701-bf11fe72d7d8">
+              <TableID>Purchasing_ProductVendor</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="19a8a3c8-b66b-4146-92c6-504c1fa7bea4">
+          <CubeDimensionID>Product</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="22e53dab-e2b7-4e9b-baf1-ff191dc0bf0d">
+              <AttributeID>Product ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="80631f97-a47e-4249-a15d-81272a172953">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b32053ff-d37a-4dc8-86d9-ac953addde19">
+                    <TableID>Purchasing_ProductVendor</TableID>
+                    <ColumnID>ProductID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="63a5d0d6-52c7-4932-a523-b3ef9f373859">
+          <CubeDimensionID>Unit Measure</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="ff53aa6e-1d53-455f-a509-2fa1c5b28a83">
+              <AttributeID>Unit Measure Code</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c564838f-e492-417d-9735-46200361560f">
+                  <DataType>WChar</DataType>
+                  <DataSize>3</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0b67b6b6-4349-4a42-9f1c-8813d0d04262">
+                    <TableID>Purchasing_ProductVendor</TableID>
+                    <ColumnID>UnitMeasureCode</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="a3a3d96b-363c-4791-8e4d-1e5c244ab114">
+          <CubeDimensionID>Vendor</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="ef48b146-39ba-4440-9c81-11097d68d10c">
+              <AttributeID>Business Entity ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="adb571f2-3cf8-46a5-8a86-3f61efa54950">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="51acab2a-0d3f-4d03-b8e7-893caacc2633">
+                    <TableID>Purchasing_ProductVendor</TableID>
+                    <ColumnID>BusinessEntityID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="2c843800-63f1-4123-8a27-3d75d64593be">
+          <CubeDimensionID>Product - Size Unit Measure</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="b8dfdba4-ea7b-4894-9ec9-e6b362c0e129">
+              <AttributeID>Unit Measure Code</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Product</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Size Unit Measure Code</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="ef6a795a-a4b0-48a9-8cd6-5e288fb213ff">
+          <CubeDimensionID>Product - Weight Unit Measure</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="732bb96c-3771-4caf-98ca-e4b22c2d3618">
+              <AttributeID>Unit Measure Code</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Product</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Weight Unit Measure Code</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="9e07e526-3f07-4e54-879b-9e5c48cc13d7">
+    <DataSourceViewID>Adventure Works2019</DataSourceViewID>
+  </Source>
+</Cube>
