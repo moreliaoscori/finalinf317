@@ -1,0 +1,33 @@
+import multiprocessing
+
+def palindrome(p):
+    return p == p[::-1]  
+
+def v_palindrome(p):
+    partes = multiprocessing.cpu_count()  
+    tamaño_partes = len(p) // partes  
+    processes = []  
+    
+    
+    for i in range(partes):  
+        inicio = i * tamaño_partes 
+        print(inicio)
+        fin = inicio + tamaño_partes if i < partes-1 else len(p)
+        print(fin)
+        process = multiprocessing.Process(target=palindrome, args=(p[inicio:fin],))
+        processes.append(process)
+        process.start()
+        
+    for process in processes:
+        process.join()
+        print(processes)
+        if not process.exitcode:
+            return True
+    return False
+    
+
+p = input("Ingrese una palabra: ")
+if v_palindrome(p):
+    print("verdadero")
+else:
+    print("falso")
