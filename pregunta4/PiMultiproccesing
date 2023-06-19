@@ -1,0 +1,26 @@
+from decimal import Decimal, getcontext
+from multiprocessing import Pool
+
+def calculate_pi_term(k):
+    term = (Decimal(1)/(16**k))*((Decimal(4)/(8*k+1)) - (Decimal(2)/(8*k+4)) - (Decimal(1)/(8*k+5)) - (Decimal(1)/(8*k+6)))
+    return term
+
+def calculate_pi(digits):
+    getcontext().prec = digits + 2
+    pi = Decimal(0)
+    k = 0
+
+    with Pool() as pool:
+        while True:
+            term = pool.map(calculate_pi_term, [k])[0]
+            print("= ", term)
+            if term == 0:
+                break
+            pi += term
+            k += 1
+
+    return pi
+
+digits = 3
+pi = calculate_pi(digits)
+print(f"π : {pi}")
