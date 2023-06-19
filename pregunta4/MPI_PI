@@ -1,0 +1,31 @@
+from mpi4py import MPI
+from decimal import Decimal, getcontext
+
+def calculate_pi(rank, size, digits):
+    getcontext().prec = digits + 2
+    pi = Decimal(0)
+    k = rank
+
+    while k < digits:
+        term = (Decimal(1)/(16**k))*((Decimal(4)/(8*k+1)) - (Decimal(2)/(8*k+4)) - (Decimal(1)/(8*k+5)) - (Decimal(1)/(8*k+6)))
+        if k % size == rank:
+            pi += term
+        k += size
+
+    return pi
+
+def main():
+    comm = MPI.COMM_WORLD
+    rank = comm.Get_rank()
+    size = comm.Get_size()
+
+    digits = 1000  
+
+    local_pi = calculate_pi(rank, size, digits)
+    pi = comm.reduce(local_pi, op=MPI.SUM, root=0)
+
+    if rank == 0:
+        print(f"π: {pi}")
+
+if __name__ == "__main__":
+    main()
